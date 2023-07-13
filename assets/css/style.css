@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* Paleta de colores */
+  --platinum: #E8EBE4;
+  --gray: #BEC1BB;
+  --blue-bell: #A491D2;
+  --soap: #CDC3E6;
+  --pale-lavender: #D4DCFF;
+  --dark-jungle: #1B1F21;
+  --outer-space: #444749;
+  --old-silver: #828485;
+
+  /* Font Families */
+  --roboto: 'Roboto', sans-serif;
+  --opensans: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: white;
+  font-family: var(--roboto);
+}
+
+/* Contact section */
+
+.border {
+  border: 1px solid var(--gray);
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.contacts {
+  flex-basis: 300px;
+  height: 100%;
+  min-width: 250px;
+}
+
+.active-user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.active-user .user-status {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+  width: 70%;
+}
+
+.user-img img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-bell);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info p {
+  font-size: small;
+  color: var(--old-silver);
+}
+
+.active-user .user-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+  width: 30%;
+  color: var(--old-silver);
+  font-size: 20px;
+}
+
+.user-icons i:hover {
+  color: var(--dark-jungle);
+}
+
+.new-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8.5rem;
+}
+
+.new-chat button {
+  appearance: none;
+  border: none;
+  width: 13rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: var(--blue-bell);
+  color: white;
+  font-size: medium;
+}
+
+.new-chat button:hover {
+  background-color: var(--soap);
+  transition: background-color 0.3s ease;
+}
+
+.new-chat button:focus {
+  background-color: var(--gray);
+}
+
+.friend-main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  gap: 0.5rem;
+  border: 1px solid var(--gray);
+  padding: 1rem;
+}
+
+.friend-contact:hover {
+  background-color: var(--soap);
+}
+
+.friend-img img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+}
+
+/* Principal section */
+.principal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--platinum);
+  width: 85%;
+  height: 100vh;
+}
+
+.principal-section img {
+  width: 20rem;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 40%;
+  padding: 30px;
+}
+
+.text-card h1 {
+  font-family: var(--opensans);
+  font-size: 2.8rem;
+}
+
+.text-card p {
+  font-family: var(--opensans);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
